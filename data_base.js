@@ -1,24 +1,8 @@
-let names = [
-    "A jornada começa", "Bela Ginga", "Encantado",
-    "Nova Amizade", "Engenhosidade Enânica", "Lar Doce Lar",
-    "Matador de Dragões", "Ginga Mestre", "Elegante",
-    "Consequências Preocupantes", "Olá, Velhas Amigas",
-    "Promessa Cumprida", "Pomar de Iounn", "Segundo Round",
-    "Fantasmas do Passado", "Sob a Superfície", "Pavio Curto",
-    "Cheio de Morte", "Trílingue", "Digno", "Colecionador",
-    "Questões Pendentes", "Morte a Todos", "Cegando o Pai de Todos",
-    "Perigo nos Céus", "Como Água e Óelo", "Caminho do Zelote",
-    "Primordial", "Fogo e Enxofre", "Não Resista", 
-    "Sinal do Crepúsculo", "Último desejo", "Escuridão e Névoa",
-    "Seletora dos Mortos", "A Verdade",
-    "Caça ao Tesouro", "Pai e Filho"
-]
-
 let listaDeTrofeus = [
     {
       titulo: "A jornada começa",
       img: "Material/trofeus/a_jornada_comeca.png",
-      maps: "Material/God_of_War_Midgard_Map.webp",
+      maps: "",
       descricao: "O troféu <b>A Jornada Começa</b> é conquistado logo no início da aventura, durante a defesa da sua casa contra o Estranho. É um marco simbólico que marca o ponto de partida da jornada de Kratos e Atreus, estabelecendo o tom épico e pessoal da narrativa.",
       dicas: "Consiga o objetivos de parrys logo na primeira batalha",
       linkYoutube: "https://www.youtube.com/embed/sZ_fyTbYPn0?si=dWvuzkYXCDla5sJU",
