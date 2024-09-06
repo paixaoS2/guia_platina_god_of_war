@@ -54,7 +54,7 @@ section button {
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
     background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
+    color: #000000; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
