@@ -1,0 +1,1 @@
+# guia_platina_god_of_war
