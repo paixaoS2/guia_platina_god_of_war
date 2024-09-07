@@ -1,10 +1,5 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-/* Estiliza o corpo da página */
-body {
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+body { /* Estiliza o corpo da página */
+    font-family: 'Poppins', sans-serif;/* Define a fonte padrão com um tema nórdico */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center;
@@ -28,7 +23,7 @@ p {
 }
 
 /* Estiliza as seções da página */
-section {
+.campo-busca {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -49,7 +44,7 @@ section input {
 }
 
 /* Estiliza os botões dentro das seções */
-section button {
+.button-pesquisar {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
@@ -60,15 +55,52 @@ section button {
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
+.button-pesquisar {
     background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
+.button-image {
+    width: 304px;
+    height: 89px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-image img {
+    transition: transform 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    border-radius: 10px; /* Arredonda as bordas */
+}
+
+.button-image:hover img {
+    transform: scale(1.1); /* Leve aumento da imagem ao passar o mouse */
+}
+
+.button-image:active img {
+    transform: scale(1.05); /* Pequena redução ao clicar */
+}
+
+.button-image:active {
+    transform: translateY(0); /* Restaura a posição ao clicar */
+    box-shadow: none; /* Remove a sombra ao clicar */
+}
+
+.button-container {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    width: 70rem; /* Largura máxima da caixa de resultados */
+    height: 56vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
@@ -141,4 +173,31 @@ footer {
     position:relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #1da1f2; /* Azul claro (como do GitHub) */
+}
+
+.footer-link:active {
+    color: #0d8ecf; /* Azul mais escuro ao clicar */
+}
+
+.footer-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Espaço entre a logo e o texto */
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover .footer-logo {
+    transform: scale(1.1); /* Leve aumento no tamanho da logo ao passar o mouse */
 }
