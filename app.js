@@ -1,13 +1,15 @@
-function pesquisar() {
+function pesquisar(campoPesquisa = "") {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
 
-    // Inicializa uma string vazia para armazenar os resultados
-    let campoPesquisa = document.getElementById("campo-pesquisa").value;
+    // Se campoPesquisa estiver vazio, tenta buscar no campo de pesquisa
+    if (!campoPesquisa) {
+        campoPesquisa = document.getElementById("campo-pesquisa").value;
+    }
 
-    if(!campoPesquisa){
-        section.innerHTML = "<p>Nada foi encontrado</p>";
-        return
+    if (!campoPesquisa) {
+        section.innerHTML = "<img src='Material/digiteAlgo.jpg'>";
+        return;
     }
 
     campoPesquisa = campoPesquisa.toLowerCase();
@@ -17,14 +19,14 @@ function pesquisar() {
     let titulo = "";
     let descricao = "";
 
-    for (let trofeu of listaDeTrofeus ){
-        titulo = trofeu.titulo.toLowerCase()
+    for (let trofeu of listaDeTrofeus) {
+        titulo = trofeu.titulo.toLowerCase();
         descricao = trofeu.descricao.toLowerCase();
-        // se titulo includes campoPesquisa
+        // Verifica se o título ou a descrição incluem o campo de pesquisa
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)) {
             resultados += `
                 <div class="item-resultado">   
-                    <img src=${trofeu.img}>
+                    <img src="${trofeu.img}">
                     <p>${trofeu.descricao}</p>
                     <img src="${trofeu.maps}">
                     <p>${trofeu.dicas}</p>
@@ -39,11 +41,11 @@ function pesquisar() {
         }
     }
 
-    if(!resultados){
-        resultados = "<p>Nada foi encontrado</p>";
+    if (!resultados) {
+        section.innerHTML = "<img src='Material/kratosTriste.jpg'>";
+        return;
     }
 
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados;
-    
 }
