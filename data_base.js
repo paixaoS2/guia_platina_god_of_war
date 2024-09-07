@@ -1,8 +1,24 @@
+let names = [
+    "A jornada começa", "Bela Ginga", "Encantado",
+    "Nova Amizade", "Engenhosidade Enânica", "Lar Doce Lar",
+    "Matador de Dragões", "Ginga Mestre", "Elegante",
+    "Consequências Preocupantes", "Olá, Velhas Amigas",
+    "Promessa Cumprida", "Pomar de Iounn", "Segundo Round",
+    "Fantasmas do Passado", "Sob a Superfície", "Pavio Curto",
+    "Cheio de Morte", "Trílingue", "Digno", "Colecionador",
+    "Questões Pendentes", "Morte a Todos", "Cegando o Pai de Todos",
+    "Perigo nos Céus", "Como Água e Óelo", "Caminho do Zelote",
+    "Primordial", "Fogo e Enxofre", "Não Resista", 
+    "Sinal do Crepúsculo", "Último desejo", "Escuridão e Névoa",
+    "Seletora dos Mortos", "A Verdade",
+    "Caça ao Tesouro", "Pai e Filho"
+]
+
 let listaDeTrofeus = [
     {
       titulo: "A jornada começa",
       img: "Material/trofeus/a_jornada_comeca.png",
-      maps: "",
+      maps: "Material/God_of_War_Midgard_Map.webp",
       descricao: "O troféu <b>A Jornada Começa</b> é conquistado logo no início da aventura, durante a defesa da sua casa contra o Estranho. É um marco simbólico que marca o ponto de partida da jornada de Kratos e Atreus, estabelecendo o tom épico e pessoal da narrativa.",
       dicas: "Consiga o objetivos de parrys logo na primeira batalha",
       linkYoutube: "https://www.youtube.com/embed/sZ_fyTbYPn0?si=dWvuzkYXCDla5sJU",
@@ -220,8 +236,8 @@ let listaDeTrofeus = [
       titulo: "Cegando o Pai de Todos",
       img: "Material/trofeus/cegando_o_pai_de_todos.png",
       maps: "",
-      descricao: "Para conquistar o troféu <b>Cegando o Pai de Todos</b>, é preciso abater Todos os corvos de Odin espalhados pelo mapa.",
-      dicas: "<b>Vídeo com as localizações</b>",
+      descricao: "Para obter o troféu <b>Cegando o Pai de Todos</b>, é necessário eliminar todos os corvos de Odin que estão espalhados pelo mapa.",
+      dicas: "<b>Este vídeo mostra todas as localizações dos corvos de Odin, facilitando a conquista do troféu Cegando o Pai de Todos.</b>",
       linkYoutube: "https://www.youtube.com/embed/lprOSEi23SM?si=Vm2OEc8LYkMmqkZS",
       criador: "By XimenesPlay",
       finish: false
@@ -231,8 +247,8 @@ let listaDeTrofeus = [
       titulo: "Perigo nos Céus",
       img: "Material/trofeus/perigo_nos_ceus.png",
       maps: "",
-      descricao: "Para conquistar o troféu <b>Perigo nos Céus</b>, você deve libertar 3 dragões, um em Veithurgard, outro na ultima missão dos anões, e o último em uma missão do Fáfnir",
-      dicas: "",
+      descricao: "Para obter o troféu <b>Perigo nos Céus</b>, é necessário libertar três dragões: um em Veithurgard, outro durante a última missão dos anões, e o último em uma missão relacionada a Fáfnir.",
+      dicas: "<b>Este vídeo será de grande ajuda:</b>",
       linkYoutube: "https://www.youtube.com/embed/2pL3CNjzMpM?si=LIE3N_9tTzU_ALeC",
       criador: "By Andy Gamer",
       finish: false
@@ -278,6 +294,16 @@ let listaDeTrofeus = [
       descricao: "Para conquistar o troféu <b>Fogo e Enxofre</b>, é preciso completar todos os desafios de Muspelheim",
       dicas: "",
       linkYoutube: "https://www.youtube.com/embed/ZFViUFTodus?si=XGUvhSTrrs6nNWzM",
+      criador: "By VictorKratos",
+      finish: false
+    },
+    {
+      titulo: "Seletora dos Mortos",
+      img: "Material/trofeus/seletora_dos_mortos.png",
+      maps: "",
+      descricao: "O troféu mais desafiador do jogo, <b>Seletora dos Mortos</b>, exige que você derrote todas as 9 Valquírias encontradas ao longo da sua jornada. Enfrentar essas poderosas guerreiras é uma prova de habilidade e perseverança, tornando esse troféu uma verdadeira conquista para os jogadores mais dedicados.",
+      dicas: "<b>Este vídeo será seu guia nessa jornada desafiadora:</b>",
+      linkYoutube: "https://www.youtube.com/embed/otXbrRWDBFM?si=8dqvt50YPQB3kAKi",
       criador: "By VictorKratos",
       finish: false
     },
