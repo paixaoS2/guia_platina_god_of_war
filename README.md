@@ -1,7 +1,7 @@
-# Guia de Platina God of War 2018
+# Guia de Platina God of War 2018 - Imersão Dev com Google Gemini
 
 ## Descrição
-Este projeto é um guia interativo para ajudar os jogadores a conquistar a platina no jogo God of War de 2018. Ele oferece uma busca por troféus e uma base de dados completa com informações sobre cada troféu.
+Este projeto é um guia interativo para ajudar os jogadores a conquistar a platina no jogo God of War de 2018. Ele oferece uma busca por troféus e uma base de dados completa com informações sobre cada troféu. 
 
 ## Tecnologias Utilizadas
 * HTML
